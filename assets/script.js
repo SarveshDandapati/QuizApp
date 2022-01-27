@@ -39,6 +39,8 @@ const questions = [
   },
 ];
 
+let finalScore = 11;
+
 //countdown timer
 let seconds = 10;
 let time = setInterval(myTimer, 1000);
@@ -47,10 +49,38 @@ function myTimer() {
     seconds--;
     if (seconds == -1) {
         clearInterval(time);
+        allDone(finalScore);
     }
 }
 
-
+function allDone(score){
+  document.querySelector('header').innerHTML = '';
+  document.querySelector('body').innerHTML = '';
+  let div = document.createElement('div');
+  div.setAttribute('class', 'slab');
+  let h1 = document.createElement('h1');
+  h1.innerText = 'All Done';
+  let p = document.createElement('p');
+  p.innerHTML =  `Your final score is <span id=final-score'></span>`;
+  let form = document.createElement('form');
+  let label = document.createElement('label');
+  label.setAttribute('for', 'intls');
+  label.innerText = 'Enter Initials: ';
+  let inputForm = document.createElement('input');
+  inputForm.setAttribute('type', 'text');
+  inputForm.setAttribute('id', 'initials');
+  inputForm.setAttribute('name', 'intls');
+  let inputBtn = document.createElement('input');
+  inputBtn.setAttribute('type', 'button');
+  inputBtn.setAttribute('value', 'Submit');
+  document.querySelector('body').append(div);
+  div.append(h1);
+  div.append(p);
+  div.append(form);
+  form.append(label);
+  form.append(inputForm);
+  form.append(inputBtn);
+}
 
 
 
