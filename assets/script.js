@@ -39,20 +39,17 @@ const questions = [
   },
 ];
 
-function setTime() {
-    let seconds = 10;
-    let fn= setInterval(updateTime,1000);
-    if(seconds < 0)
-        Window.location.replace(`file:///C:/Users/Sarvesh's%20Laptop/Desktop/QuizApp/all-done.html`);
-
-        
-    function updateTime(){
-	    seconds -=1;
-        document.querySelector('#time').innerText = seconds;
+//countdown timer
+let seconds = 10;
+let time = setInterval(myTimer, 1000);
+function myTimer() {
+    document.querySelector('#time').innerText = seconds;
+    seconds--;
+    if (seconds == -1) {
+        clearInterval(time);
     }
 }
 
-setTime();
 
 
 
