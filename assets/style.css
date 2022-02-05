@@ -100,7 +100,7 @@ p{
     line-height: 2em;
 }
 
-.btn, input[type='button']{
+.btn{
     border:none;
     color:#fff;
     background-color: #218380;
@@ -108,7 +108,7 @@ p{
     border-radius: 0.5em;
 }
 
-.btn:hover, input[type='button']:hover{
+.btn:hover{
     background-color: #0c4d4a;
 }
 
