@@ -1,17 +1,20 @@
 /* Global Styling */
+:root{
+  --colour:#1e527c;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: Verdana;
+  font-family: 'Montserrat', sans-serif;
 }
 ul {
   list-style-type: none;
 }
 .options li {
-  background-color: #218380;
+  background-color: var(--colour);
   color: #fff;
   border-radius: 0.5rem;
   margin-bottom: 0.25rem;
@@ -22,7 +25,7 @@ ul {
 header {
   display: flex;
   justify-content: space-between;
-  background-color: #218380;
+  background-color: var(--colour);
   color: #ffffff;
   padding: 1.6rem 3rem;
 }
@@ -51,7 +54,7 @@ header {
 }
 .btn {
   display: inline-block;
-  background-color: #218380;
+  background-color: var(--colour);
   color: #fff;
   border: none;
   font-size: 1rem;
@@ -62,7 +65,7 @@ header {
 }
 .btn2 {
   display: inline-block;
-  background-color: #218380;
+  background-color: var(--colour);
   color: #fff;
   border: none;
   font-size: 0.8rem;
