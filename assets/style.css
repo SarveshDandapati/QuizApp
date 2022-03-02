@@ -81,6 +81,12 @@ header {
   padding-top: 0.75rem;
   font-weight: bold;
 }
+.correct{
+  color: rgb(19, 143, 19);
+}
+.incorrect{
+  color: rgb(182, 22, 22);
+}
 .initials.startcard {
   width: 35%;
   padding: 4rem;
