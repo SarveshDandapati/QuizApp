@@ -106,20 +106,20 @@ input {
 .toggle {
   display: none;
 }
-.social{
+.social-media{
   margin-top:0;
 }
-.social li{
+.social-media li{
   padding: 0 1rem 2rem 1rem;
   display:inline-flex;
 }
-.social a{
+.social-media a{
   text-decoration: none;
   color:black;
   font-weight: 700;
   opacity: 0.5;
 }
-.social a:hover{
+.social-media a:hover{
   text-decoration:dashed underline;
 }
 /* Media queries for responsive design */
